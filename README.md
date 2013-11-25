@@ -45,7 +45,6 @@ If you are primary developing SilverStripe projects, you can set a couple of PHP
      phpcs --config-set default_standard SilverStripe
      phpcs --config-set report_width 120
      phpcs --config-set encoding utf-8
-     phpcs --config-set tab_width 4
      
 With this setup you only need run phpcs like this:
 
