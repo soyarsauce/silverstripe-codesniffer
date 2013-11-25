@@ -7,7 +7,7 @@ http://doc.silverstripe.org/framework/en/trunk/misc/coding-conventions.
 
 This relies on the PHPCodesniffer being installed
 
-## Installation
+## General Installation
 
 1) First install PHPCodesniffer, check for it's existens via:
 
@@ -29,6 +29,27 @@ here: http://pear.php.net/package/PHP_CodeSniffer/download
 
 NOTE: Beware, running this on a whole silverstripe installation takes to long to
  be worth it. Use it on your mysite module or target specific directories.
+ 
+## Install for Mac OS X
+
+After you have installed PHP Codesniffer via pear, you should have a pear folder in your home directory, example:
+
+     /Users/stig/pear
+     
+git clone this repository into the PHP Codesniffer standards directory:
+
+     git clone git://github.com/stojg/silverstripe-codesniffer.git /Users/slindqvist/pear/share/pear/PHP/CodeSniffer/Standards/SilverStripe
+
+If you are primary developing SilverStripe projects, you can set a couple of PHP CS settings as default:
+
+     phpcs --config-set default_standard SilverStripe
+     phpcs --config-set report_width 120
+     phpcs --config-set encoding utf-8
+     phpcs --config-set tab_width 4
+     
+With this setup you only need run phpcs like this:
+
+     phpcs cms
 
 ## Contribution
 
