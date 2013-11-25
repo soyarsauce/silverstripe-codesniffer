@@ -37,7 +37,7 @@
 		</properties>
 	</rule>
 	<rule ref="Generic.Files.LineLength.TooLong">
-		<severity>7</severity>
+		<severity>4</severity>
 	</rule>
 	<rule ref="Generic.Files.LineLength">
 		<properties>
